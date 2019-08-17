@@ -5,7 +5,7 @@
     <li *ngFor='let q of allQuotes, let i = index'>
          {{q.id}} <br> 
          <p> This Quote was written on {{q.completeDate|date|uppercase}} </p>
-         <button (click)='toggleDetails(i)'>Quote</button>
+         <button class="btn btn-success" (click)='toggleDetails(i)'>Quote</button>
          <br>By  the Author {{q.author}} <br>
          <app-quote-detail *ngIf='q.showDescription' [quote]='q' (isComplete) = 'quoteDelete($event,i)'></app-quote-detail>
     </li>
