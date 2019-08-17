@@ -3,7 +3,10 @@
 <hr>
 <ol>
     <li *ngFor="let q of allQuotes">
-         {{q.id}} <br> {{q.quote}} <br> {{q.author}}
+         {{q.id}} <br> 
+         <p>{{q.quote}} </p>
+         <br> {{q.author}}
+         <app-quote-detail [quote]='quote'></app-quote-detail>
     </li>
     
 
