@@ -2,12 +2,12 @@
 <h1>GRAB A QUOTE</h1>
 <hr>
 <ol>
-    <li *ngFor="let q of (allQuotes), let i=index">
+    <li *ngFor='let q of allQuotes, let i = index'>
          {{q.id}} <br> 
-          This Quote was written on {{q.completeDate|date|uppercase}} <br>
-           By  the Author {{q.author}} <br>
+         <p> This Quote was written on {{q.completeDate|date|uppercase}} </p>
          <button (click)='toggleDetails(i)'>Quote</button>
-         <app-quote-detail *ngIf='q.showDescription' [quote]='q'(isCompete)='completeGoal($event,i)'></app-quote-detail>
+         <br>By  the Author {{q.author}} <br>
+         <app-quote-detail *ngIf='q.showDescription' [quote]='q' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
     </li>
     
 

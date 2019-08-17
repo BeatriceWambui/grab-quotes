@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { Quote } from '../quote'
 
 @Component({
@@ -23,12 +23,13 @@ export class QuoteComponent implements OnInit {
   toggleDetails(index){
     this.allQuotes[index].showDescription = !this.allQuotes[index].showDescription;
   }
-  completeQuote(isComplete, index){
-    if (isComplete){
-      // let toDelete=confirm (`Are you sure you want to delete ${this.allQuotes[index].description}?`)
-      // if (toDelete){
-        this.allQuotes.splice(index,1)
-      // }
+  quoteDelete(isComplete, index){
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete this Quote?`)
+      if(toDelete){
+        this.allQuotes.splice(index,1);
+      }
+      
     }
   }
 

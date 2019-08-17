@@ -7,13 +7,14 @@ import { Quote } from '../quote';
   styleUrls: ['./quote-detail.component.css']
 })
 export class QuoteDetailComponent implements OnInit {
-  @Output() isComplete = new EventEmitter <boolean>(); 
-  @Input() quote:Quote;
 
-  quoteComplete(complete:boolean){
-    this.isComplete.emit(complete);
-  }
+  @Input() quote:Quote;
+  @Output() isComplete = new EventEmitter<boolean>();
   
+  deleteQuote(read:boolean){
+    this.isComplete.emit(read);
+  }
+
   constructor() { }
     
   ngOnInit() {
