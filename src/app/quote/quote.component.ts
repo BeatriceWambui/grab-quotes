@@ -20,6 +20,9 @@ export class QuoteComponent implements OnInit {
     new Quote ('no 9','The only thing that will make you happy is being happy with who you are not who people think you are','Moreen'),
     new Quote ('no 10','Death leaves a heartache no one can heal, love leaves a memory no one can steal','Everlyne')
   ];
+  toggleDetails(index){
+    this.allQuotes[index].showQuote= !this.allQuotes[index].showQuote;
+  }
 
   constructor() { }
 

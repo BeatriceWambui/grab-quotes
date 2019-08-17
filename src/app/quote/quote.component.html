@@ -2,11 +2,12 @@
 <h1>GRAB A QUOTE</h1>
 <hr>
 <ol>
-    <li *ngFor="let q of allQuotes">
+    <li *ngFor="let q of allQuotes; let i=index">
          {{q.id}} <br> 
          <p>{{q.quote}} </p>
-         <br> {{q.author}}
-         <app-quote-detail [quote]='quote'></app-quote-detail>
+         <br> {{q.author}} <br>
+         <button (click)='toggleDetails(i)'>Quote</button>
+         <app-quote-detail *ngIf='quote.showQuote' [quote]='quote'></app-quote-detail>
     </li>
     
 
