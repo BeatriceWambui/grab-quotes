@@ -7,7 +7,7 @@
           This Quote was written on {{q.completeDate|date|uppercase}} <br>
            By  the Author {{q.author}} <br>
          <button (click)='toggleDetails(i)'>Quote</button>
-         <app-quote-detail *ngIf='q.showDescription' [quote]='q'(isCompete)='deleteGoal($event,i)'></app-quote-detail>
+         <app-quote-detail *ngIf='q.showDescription' [quote]='q'(isCompete)='completeGoal($event,i)'></app-quote-detail>
     </li>
     
 
