@@ -1,9 +1,12 @@
+<div class="container-fluid">
 <h1>GRAB A QUOTE</h1>
 <hr>
-<ul>
+<ol>
     <li *ngFor="let q of allQuotes">
-        {{q.quote}}
+         {{q.id}} <br> {{q.quote}} <br> {{q.author}}
     </li>
+    
 
-</ul>
+</ol>
 <button class="btn btn-primary">Show more</button>
+</div>
