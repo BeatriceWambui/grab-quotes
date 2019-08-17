@@ -4,7 +4,8 @@
 <ol>
     <li *ngFor="let q of (allQuotes), let i=index">
          {{q.id}} <br> 
-         <br> {{q.author}} written on {{q.completeDate|date}} <br>
+          This Quote was written on {{q.completeDate|date|uppercase}} <br>
+           By  the Author {{q.author}} <br>
          <button (click)='toggleDetails(i)'>Quote</button>
          <app-quote-detail *ngIf='q.showDescription' [quote]='q'></app-quote-detail>
     </li>
