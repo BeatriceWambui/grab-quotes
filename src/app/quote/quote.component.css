@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
-h1{
+h1 ,h2{
     font-family: 'Lobster', cursive;
     text-align: center;
      font-size: 100px;
@@ -13,3 +13,4 @@ h1{
     margin-left:20%;
     border: 5px solid green;
 }
+
