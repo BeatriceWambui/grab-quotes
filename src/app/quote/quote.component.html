@@ -1,19 +1,22 @@
 <div class="container-fluid">
 <h1>GRAB A QUOTE</h1>
 <hr>
-<div col-md-8>
-    <ol>
-        <li *ngFor='let q of allQuotes, let i = index'>
-             {{q.id}} <br> 
-             <p> This Quote was written on {{q.completeDate|date|uppercase}} </p>
-             <button class="btn btn-success" (click)='toggleDetails(i)'>Quote</button>
-             <br>By  the Author {{q.author}} <br>
-             <app-quote-detail *ngIf='q.showDescription' [quote]='q' (isComplete) = 'quoteDelete($event,i)'></app-quote-detail>
-        </li> 
+<div class="row">
+    <div col-md-8>
+        <ol>
+            <li *ngFor='let q of allQuotes, let i = index'>
+                 {{q.id}} <br> 
+                 <p> This Quote was written on {{q.completeDate|date|uppercase}} </p>
+                 <button class="btn btn-success" (click)='toggleDetails(i)'>Quote</button>
+                 <br>By  the Author {{q.author}} <br>
+                 <app-quote-detail *ngIf='q.showDescription' [quote]='q' (isComplete) = 'quoteDelete($event,i)'></app-quote-detail>
+            </li> 
+        
+        </ol>
+    </div>
+    <div class="col-md-4" id="entry">
+      <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
     
-    </ol>
-</div>
-<div class="col-md-4">
-  <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
-
+    </div>
+    
 </div>

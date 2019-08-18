@@ -8,9 +8,8 @@ h1{
     background-color:yellow;
 }
 
-/* .container-fluid {
-    background-image: url ("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUTb8mwHMjvPxrpxukPEWW17v9qgJ_WVTTujD-YmU9vEuGiCTTZA");
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-    background-size:cover;
-} */
+
+#entry{
+    margin-left:20%;
+    border: 5px solid green;
+}

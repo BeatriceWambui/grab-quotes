@@ -1,0 +1,12 @@
+h2{
+    font-size:20px;
+        
+}
+
+.container-fluid {
+    background-image: url ("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBBP4vqA0U1Xud-KtdXAMzDdBZDp0cAUakq4cCpwNtFxbcki28oA");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+}
+
