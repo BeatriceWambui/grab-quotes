@@ -1,6 +1,6 @@
 <div class="form">
  <h2 class="text-center">Create a new Quote</h2>
-    <form (ngSubmit)='submitGoal()' #quoteForm='ngForm'> 
+    <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'> 
         <div class="form-group">
             <label for="name">NAME</label>
             <input type="text" class="form-control" id="name" placeholder="Enter your name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required>
