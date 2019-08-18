@@ -10,15 +10,15 @@ export class QuoteComponent implements OnInit {
 
   allQuotes:Quote[] = [
     new Quote ('Psalms 138:3','When i called you answered me:you made me bold and stouthearted','Wanjiru', new Date(2019,1,1),0,0),
-    new Quote ('no 2','No one ever finds life worth living one has to make it worth living','Wach B',new Date(2019,2,2),0,0),
-    new Quote ('no 3','If you want a single man create yours','Grace',new Date(2019,3,3),0,0),
-    new Quote ('no 4','Be the best version of your self','Dancan',new Date(2019,4,4),0,0),
-    new Quote ('no 5','Make your waves, fan your flames, give us chills.','Jenifer',new Date(2019,5,5),0,0),
-    new Quote ('no 6','She loves too hard,feels too deeply, asks too often, desire too much','Michael',new Date(2019,6,6),0,0),
-    new Quote ('no 7','I’ve been called high maintenance because I want what I want, and intimidating because of the space I occupy','Daniel',new Date(2019,7,7),0,0),
-    new Quote ('no 8','I’ve been called selfish because I am self-loving. I’ve been called a witch because I know how to heal myself.','Sharon',new Date(2019,8,8),0,0),
-    new Quote ('no 9','The only thing that will make you happy is being happy with who you are not who people think you are','Moreen',new Date(2019,9,9),0,0),
-    new Quote ('no 10','Death leaves a heartache no one can heal, love leaves a memory no one can steal','Everlyne',new Date(2019,10,10),0,0)
+    new Quote ('Jeremiah 17:14','Heal me, Lord, and I will be healed save me and I will be saved, for you are the one I praise.','Wach B',new Date(2019,2,2),0,0),
+    new Quote ('Isaih 14:27','Nothing can stop Gods plan for your life.','Grace',new Date(2019,3,3),0,0),
+    new Quote ('Mathew 6:34','Pray more worry less','Dancan',new Date(2019,4,4),0,0),
+    new Quote ('Luke 1:37','FOr with GOd nothing is impossible','Jenifer',new Date(2019,5,5),0,0),
+    new Quote ('Mathew 5:20','For I say to you that exept your rightiousness shall axceed the righteousness of the scribes and the Pharisees you shall in no case enter into the kingdom of heaven','Michael',new Date(2019,6,6),0,0),
+    new Quote ('1 Corinthians 13:7','Love never dies','Daniel',new Date(2019,7,7),0,0),
+    new Quote ('Psalms 103:3-5','Jesus has changed my life!','Sharon',new Date(2019,8,8),0,0),
+    new Quote ('Psalms 119:105','Your word is a lamp to my feet, and a light to my path','Moreen',new Date(2019,9,9),0,0),
+    new Quote ('Joshua 24:15','As for me and my house we shall serve the Lord','Everlyne',new Date(2019,10,10),0,0)
   ];
   toggleDetails(index){
     this.allQuotes[index].showDescription = !this.allQuotes[index].showDescription;
