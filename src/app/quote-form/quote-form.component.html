@@ -1,0 +1,22 @@
+<div class="form">
+ <h2 class="text-center">Create a new Quote</h2>
+    <div class="form-group">
+        <label for="name">NAME</label>
+        <input type="text" required class="form-control" id="name" placeholder="Enter your name">   
+        <label for="id">VERSE</label>
+        <input type="text" id="verse" required class="form-control" placeholder="Enter your verse">
+    </div>
+    <div>
+        <label for="description">DESCRIPTION</label>
+        <textarea class="form-control" id="description" cols="30" rows="5" required placeholder="Enter your Quote"></textarea>
+    </div>
+    <br>
+    <div>
+        <label for="complete">COMPLETION</label> &nbsp; &nbsp;
+        <input type="date" id="complete" required>
+    </div>
+
+    <div>
+            <button class='btn btn-success' (click)='submit'>Submit</button>
+    </div>
+</div>

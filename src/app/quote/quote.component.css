@@ -7,6 +7,6 @@ h1{
 .container-fluid{
     background-color:yellow;
 }
-/* id{
-    font-size:30px;
-} */
+my-form{
+    padding-left:20%;
+}

@@ -8,10 +8,13 @@
          <button class="btn btn-success" (click)='toggleDetails(i)'>Quote</button>
          <br>By  the Author {{q.author}} <br>
          <app-quote-detail *ngIf='q.showDescription' [quote]='q' (isComplete) = 'quoteDelete($event,i)'></app-quote-detail>
-    </li>
-    
+    </li> 
 
 </ol>
+<div class="my-form">
+  <app-quote-form></app-quote-form>
+
+</div>
 <!-- <div  *ngFor='let q of allQuotes, let i = index' class="card">
   <div class="card-header">Header</div>
   <div class="card-body"> {{q.id}} <br> 
