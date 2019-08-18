@@ -1,6 +1,15 @@
-# Quotes
+# Grab a quote app
+
+## Author
+Beatrice Wambui
+Student at moringa school
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.1.
+The project helps the user to see Displayed Quotes Add a Quote and even app or down vote a quote
+
+## Live Page
+The link to live page is : 
+https://beatricewambui.github.io/grab-quotes/
 
 ## Development server
 
