@@ -12,15 +12,6 @@
 
 </ol>
 <div class="my-form">
-  <app-quote-form></app-quote-form>
+  <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
 
 </div>
-<!-- <div  *ngFor='let q of allQuotes, let i = index' class="card">
-  <div class="card-header">Header</div>
-  <div class="card-body"> {{q.id}} <br> 
-    <p> This Quote was written on {{q.completeDate|date|uppercase}} </p>
-    <button (click)='toggleDetails(i)'>Quote</button>
-    <br>By  the Author {{q.author}} <br></div> 
-  <div class="card-footer"> <app-quote-detail *ngIf='q.showDescription' [quote]='q' (isComplete) = 'quoteDelete($event,i)'></app-quote-detail></div>
-</div>
-</div> -->

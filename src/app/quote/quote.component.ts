@@ -20,6 +20,12 @@ export class QuoteComponent implements OnInit {
     new Quote ('Psalms 119:105','Your word is a lamp to my feet, and a light to my path','Moreen',new Date(2019,9,9),0,0),
     new Quote ('Joshua 24:15','As for me and my house we shall serve the Lord','Everlyne',new Date(2019,10,10),0,0)
   ];
+  addNewQuote(quote){
+    let quoteLength =this.allQuotes.length;
+    quote.id =quoteLength+1;
+    quote.completeDate = new Date(quote.completeDate)
+    this.allQuotes.push(quote)
+  }
   toggleDetails(index){
     this.allQuotes[index].showDescription = !this.allQuotes[index].showDescription;
   }

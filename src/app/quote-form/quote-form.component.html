@@ -1,6 +1,6 @@
 <div class="form">
  <h2 class="text-center">Create a new Quote</h2>
-    <form #quoteForm='ngForm'> 
+    <form (ngSubmit)='submitGoal()' #quoteForm='ngForm'> 
         <div class="form-group">
             <label for="name">NAME</label>
             <input type="text" class="form-control" id="name" placeholder="Enter your name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required>
@@ -8,22 +8,30 @@
                 <p>Name is required</p>
 
             </div>
-            Writing:: {{newQuote.name}}
+            Writing: {{newQuote.name}}
         </div>
         <div>   
             <label for="id">VERSE</label>
             <input type="text" id="verse" required class="form-control" placeholder="Enter your verse" [(ngModel)]="newQuote.verse" name="verse">
+            
             Writing: {{newQuote.verse}}
         </div>
         <div>
             <label for="description">DESCRIPTION</label>
-            <textarea class="form-control" id="description" cols="30" rows="5" required placeholder="Enter your Quote"  [(ngModel)]="newQuote.quote" name="Quote"></textarea>
+            <textarea class="form-control" id="description" cols="30" rows="5" required placeholder="Enter your Quote"  [(ngModel)]="newQuote.description" name="description" #description="ngModel"></textarea>
+            <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
+                <p>Quote is required</p>
+
+            </div>
             Writing: {{newQuote.quote}}
         </div>
         <br>
         <div>
             <label for="complete">COMPLETION</label> &nbsp; &nbsp;
-            <input type="date" id="complete" required>
+            <input type='date' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required>
+            <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
+                    <p>Date is required</p>
+            </div>
         </div>
 
         <div>
