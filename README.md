@@ -43,4 +43,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
  ## Technologies used
  * HTML 5
-   
+ * CSS
+ * ANGULAR CLI
+ * MARKDOWN
+ * BOOTSTRAP
+
+## Contacts
+Reach me through my Email ** wachirabeatice2020@gmail.com **
+## Copyright 
+copyright (c)2019 Beatrice Wambui
+MIT License
