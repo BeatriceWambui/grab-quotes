@@ -12,9 +12,7 @@ export class QuoteComponent implements OnInit {
     new Quote ('Psalms 138:3','When i called you  answered me:you made me bold and stouthearted','Wanjiru', new Date(2019,1,1),0,0),
     new Quote ('Jeremiah 17:14','Heal me, Lord, and I will be healed save me and I will be saved, for you are the one I praise.','Wach B',new Date(2019,2,2),0,0),
     new Quote ('Isaih 14:27','Nothing can stop Gods plan for your life.','Grace',new Date(2019,3,3),0,0),
-    new Quote ('Mathew 6:34','Pray more worry less','Dancan',new Date(2019,4,4),0,0),
-    new Quote ('Luke 1:37','FOr with GOd nothing is impossible','Jenifer',new Date(2019,5,5),0,0),
-   
+    new Quote ('Mathew 6:34','Pray more worry less','Dancan',new Date(2019,4,4),0,0),   
   ];
   addNewQuote(quote){
     let quoteLength =this.allQuotes.length;

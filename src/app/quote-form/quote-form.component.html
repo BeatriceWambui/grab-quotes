@@ -19,7 +19,7 @@
         </div>
         <div>
             <label for="description">DESCRIPTION</label>
-            <textarea class="form-control" id="description" cols="30" rows="5" required placeholder="Enter your Quote"  [(ngModel)]="newQuote.description" name="description" #description="ngModel"></textarea>
+            <textarea class="form-control" id="description" cols="30" rows="3" required placeholder="Enter your Quote"  [(ngModel)]="newQuote.description" name="description" #description="ngModel"></textarea>
             <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
                 <p>Quote is required</p>
 
