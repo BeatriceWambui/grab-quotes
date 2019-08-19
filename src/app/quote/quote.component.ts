@@ -3,13 +3,13 @@ import { Quote } from '../quote'
 
 @Component({
   selector: 'app-quote',
-  templateUrl: './quote.component.html',
+  templateUrl: './quote.component.html', 
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
 
   allQuotes:Quote[] = [
-    new Quote ('Psalms 138:3','When i called you answered me:you made me bold and stouthearted','Wanjiru', new Date(2019,1,1),0,0),
+    new Quote ('Psalms 138:3','When i called you  answered me:you made me bold and stouthearted','Wanjiru', new Date(2019,1,1),0,0),
     new Quote ('Jeremiah 17:14','Heal me, Lord, and I will be healed save me and I will be saved, for you are the one I praise.','Wach B',new Date(2019,2,2),0,0),
     new Quote ('Isaih 14:27','Nothing can stop Gods plan for your life.','Grace',new Date(2019,3,3),0,0),
     new Quote ('Mathew 6:34','Pray more worry less','Dancan',new Date(2019,4,4),0,0),

@@ -1,12 +1,9 @@
 h2{
-    font-size:30px;
-        
+    font-size:50px;          
 }
-.form {
-    background-image: url ("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBBP4vqA0U1Xud-KtdXAMzDdBZDp0cAUakq4cCpwNtFxbcki28oA");
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-    background-size:cover;
+label{ 
+    font-size:20px;
 }
+
 
 
