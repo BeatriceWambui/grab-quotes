@@ -3,7 +3,7 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 body{
-    background-image: url("../src/assets/photo.jpg");
+    background-image: url("../src/assets/photo2.jpg");
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-size:cover;
